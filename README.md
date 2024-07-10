@@ -3,11 +3,11 @@
 
 ## Overview
 
-NJServerLogDown is a Node.js server application designed to allow users to download log files from the WebIQ server. The server is built using Express.js and supports CORS for cross-origin requests.
+NJServerLogDown is a Node.js application designed to allow users to download log files from the WebIQ server. The server is built using Express.js and supports CORS for cross-origin requests.
 
 ## Download and Run
 
-You can simply download and run the `my-server.exe` OR you can modify the code and make your own executable server.
+You can download and run the `my-server.exe` OR modify the code and make your executable server.
 
 ## WebIQ Applications
 
@@ -90,6 +90,29 @@ You can create a standalone executable for the server using `pkg`.
    ```bash
    pkg . --targets node14-win-x64
    ```
+4. To create a Linux executable, use:
+
+   ```bash
+   pkg . --targets node14-linux-x64
+   ```
+   
+## Running on Linux
+
+1. Transfer the generated Linux executable to your Linux machine.
+
+2. Set executable permissions:
+
+   ```bash
+   chmod +x my-server-linux
+   ```
+
+3. Run the executable:
+
+   ```bash
+   ./my-server-linux
+   ```
+
+   The server will start running at `http://localhost:3000`.
 
 ## Contributing
 
