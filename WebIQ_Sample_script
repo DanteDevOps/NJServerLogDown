@@ -1,0 +1,29 @@
+    /*
+     * First "create entry" in "code manager" (Alt+C), Local-Scripts and name it whatever you like.
+     * Then add code below after the comment " //Place your Code here "
+     * Keep in mind that you need to first download and install the lib-jquery3 package with package manager (Alt+Q)
+     */
+
+
+$('#download-log-button').click(function() {
+        $.ajax({
+            url: 'http://localhost:3000/download-log', // Adjust the URL to your server's address
+            method: 'GET',
+            xhrFields: {
+                responseType: 'blob'
+            },
+            success: function(data) {
+                const url = window.URL.createObjectURL(data);
+                const a = document.createElement('a');
+                a.style.display = 'none';
+                a.href = url;
+                a.download = 'connect.log';
+                document.body.appendChild(a);
+                a.click();
+                window.URL.revokeObjectURL(url);
+            },
+            error: function() {
+                alert('Error downloading the log file.');
+            }
+        });
+    });
