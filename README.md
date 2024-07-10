@@ -1,7 +1,17 @@
+
 # Node js Server - Connect.log file Download for WebIQ
 
 ## Overview
 
+NJServerLogDown is a Node.js server application designed to allow users to download log files from the WebIQ server. The server is built using Express.js and supports CORS for cross-origin requests.
+
+## Download and Run
+
+You can simply download and run the `my-server.exe` OR you can modify the code and make your own executable server.
+
+## WebIQ Applications
+
+For the WebIQ applications, you need to download and install the `lib-jquery3` from [Smart HMI](https://www.smart-hmi.com). You need to log in and download it from the User area and install the package in your application to use the WebIQ sample code.
 
 ## Features
 
@@ -31,6 +41,7 @@ NJServerLogDown/
 1. Clone the repository:
 
    ```bash
+   git clone https://github.com/Ariaparsboy/NJServerLogDown.git
    cd NJServerLogDown
    ```
 
@@ -48,10 +59,12 @@ NJServerLogDown/
    node server.js
    ```
 
+   The server will start running at `http://localhost:3000`.
 
 2. To download the log file, make a GET request to:
 
    ```
+   http://localhost:3000/download-log
    ```
 
 ## Creating an Executable
