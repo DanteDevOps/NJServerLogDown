@@ -13,7 +13,7 @@
                 console.log("Button clicked");
 
                 $.ajax({
-                    url: 'http://YOUR_WebIQ_SERVER_IP:3000/download-log', // Use the IP address of your Ubuntu server
+                    url: 'http://YOUR_WebIQ_SERVER_IP:3000/download-log', // Use the IP address of your WebIQ server
                     method: 'GET',
                     xhrFields: {
                         responseType: 'blob'
