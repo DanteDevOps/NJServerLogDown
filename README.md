@@ -7,7 +7,7 @@ NJServerLogDown is a Node.js server application designed to allow users to downl
 
 ## Download and Run
 
-You can download and run the `my-server.exe` OR modify the code and make your executable server.
+You can simply download and run the `my-server.exe` or `my-server-linux` OR you can modify the code and make your own executable server.
 
 ## WebIQ Applications
 
