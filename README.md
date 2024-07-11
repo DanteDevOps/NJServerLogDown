@@ -3,7 +3,7 @@
 
 ## Overview
 
-NJServerLogDown is a Node.js server application designed to allow users to download log files from a server. The server is built using Express.js and supports CORS for cross-origin requests. The log file is zipped before being sent to the client.
+NJServerLogDown is a Node.js application designed to allow users to download log files from the WebIQ server. The server is built using Express.js and supports CORS for cross-origin requests.
 
 ## Download and Run
 
@@ -18,7 +18,6 @@ For the WebIQ applications, you need to download and install the `lib-jquery3` f
 - Download log files from the server
 - Simple setup and usage
 - Can be packaged as a standalone executable
-- Automatically zips log files before download
 
 ## Project Structure
 
@@ -42,7 +41,7 @@ NJServerLogDown/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/DanteDevOps/NJServerLogDown.git
+   git clone https://github.com/Ariaparsboy/NJServerLogDown.git
    cd NJServerLogDown
    ```
 
@@ -60,16 +59,13 @@ NJServerLogDown/
    node server.js
    ```
 
-   The server will start running at `http://0.0.0.0:3000`.
+   The server will start running at `http://localhost:3000`.
 
 2. To download the log file, make a GET request to:
 
    ```
-   http://<YOUR_SERVER_IP>:3000/download-log
+   http://localhost:3000/download-log
    ```
-
-   Replace `<YOUR_SERVER_IP>` with the actual IP address of the server. This will download the log file as a zipped archive named `connect.zip`.
-   
 
 ## Creating an Executable
 
@@ -107,39 +103,16 @@ You can create a standalone executable for the server using `pkg`.
 2. Set executable permissions:
 
    ```bash
-   chmod +x dist/njserverlogdown-linux
+   chmod +x my-server-linux
    ```
 
 3. Run the executable:
 
    ```bash
-   ./dist/njserverlogdown-linux
+   ./my-server-linux
    ```
 
-   The server will start running at `http://0.0.0.0:3000`.
-
-## Configuring Firewall and Network Settings
-
-To ensure that the server can be accessed from other machines on the network, you need to configure the firewall and network settings on your Ubuntu server.
-
-1. **Allow Port 3000 Through the Firewall:**
-
-   ```bash
-   sudo ufw allow 3000/tcp // for server
-   sudo ufw allow 10123/tcp // for WebIQ Runtime
-   sudo ufw allow 10124/tcp // for WebIQ Manager
-   sudo ufw enable
-   ```
-
-2. **Verify Server Accessibility:**
-
-   - From your client machine, try to access the server directly using a browser or a tool like `curl`:
-
-     ```bash
-     curl http://<YOUR_SERVER_IP>:3000/download-log
-     ```
-
-   - If the server is reachable, you should see the response or the file being downloaded.
+   The server will start running at `http://localhost:3000`.
 
 ## Contributing
 

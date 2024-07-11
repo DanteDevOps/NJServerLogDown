@@ -1,15 +1,28 @@
 {
-  "name": "my-server",
+  "name": "njserverlogdown",
   "version": "1.0.0",
-  "description": "Node.js server",
+  "description": "Node.js server for downloading log files",
   "main": "server.js",
   "bin": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "archiver": "^7.0.1",
+    "archiver": "^5.3.0",
     "cors": "^2.8.5",
     "express": "^4.17.1"
-  }
+  },
+  "pkg": {
+    "assets": [
+      "/var/lib/webiq/connect.log",
+      "C:/ProgramData/WebIQ/connect.log"
+    ],
+    "targets": [
+      "node14-win-x64",
+      "node14-linux-x64"
+    ],
+    "outputPath": "./dist"
+  },
+  "author": "",
+  "license": "MIT"
 }
