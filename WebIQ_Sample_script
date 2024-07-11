@@ -1,8 +1,12 @@
     /*
      * Don't forget to change the YOUR_WebIQ_SERVER_IP to your WebIQ runtime IP address
-     * First "create entry" in "code manager" (Alt+C), Local-Scripts and name it whatever you like.
+     * First "create entry" in "code manager" (Alt+C), Local-Scripts, and name it whatever you like.
      * Then add code below after the comment " //Place your Code here "
-     * Keep in mind that you need to first download and install the lib-jquery3 package with package manager (Alt+Q)
+     * Keep in mind that you need to first download and install the lib-jquery3 package with a package manager (Alt+Q)
+     * For this specific example you need to add a HTML widget with the code below then you have a simple button to click to download the log file
+     *<body>
+     *<button id="download-log-button">Download Log</button>
+     *</body>
      */
 
 
