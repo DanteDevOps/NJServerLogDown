@@ -4,13 +4,6 @@
 ## Overview
 
 NJServerLogDown is a Node.js server application designed to allow users to download log files from a server. The server is built using Express.js and supports CORS for cross-origin requests. The log file is zipped before being sent to the client.
-## Download and Run
-
-You can simply download and run the `njserverlogdown-win.exe`, `njserverlogdown-linux` from dist folder OR you can modify the code and make your own executable server.
-
-## WebIQ Applications
-
-For the WebIQ applications, you need to download and install the `lib-jquery3` from [Smart HMI](https://www.smart-hmi.com). You need to log in and download it from the User area and install the package in your application to use the WebIQ sample code.
 
 ## Features
 
@@ -18,6 +11,14 @@ For the WebIQ applications, you need to download and install the `lib-jquery3` f
 - Simple setup and usage
 - Can be packaged as a standalone executable
 - Automatically zips log files before download
+
+## Download and Run
+
+You can simply download and run the `njserverlogdown-win.exe`, `njserverlogdown-linux` from dist folder OR you can modify the code and make your own executable server.
+
+## WebIQ Applications
+
+For the WebIQ applications, you need to download and install the `lib-jquery3` from [Smart HMI](https://www.smart-hmi.com). You need to log in and download it from the User area and install the package in your application to use the WebIQ sample code.
 
 ## Project Structure
 
