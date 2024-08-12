@@ -4,7 +4,7 @@
   "description": "Node.js server for downloading log files",
   "main": "server.js",
   "bin": {
-    "njserverlogdown": "./server.js"
+    "njserverlogdown": "server.js"
   },
   "scripts": {
     "start": "node server.js"
@@ -22,8 +22,7 @@
     "targets": [
       "node14-win-x64",
       "node14-linux-x64",
-      "node14-win-x86",
-      "node14-linux-armv7"
+      "node14-win-x86"
     ],
     "outputPath": "./dist"
   },
