@@ -1,7 +1,7 @@
 {
   "name": "njserverlogdown",
   "version": "1.0.0",
-  "description": "Node.js server for downloading log files",
+  "description": "Node.js server for downloading log file",
   "main": "server.js",
   "bin": {
     "njserverlogdown": "server.js"
